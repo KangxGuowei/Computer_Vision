@@ -1,0 +1,23 @@
+#run conda env create -f environment.yml
+name: myenv
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - matplotlib
+  - opencv
+  - pillow
+  - scikit-learn
+  - scikit-image
+  - jupyter
+  - pip:
+    - tensorflow
+    - torch==1.10.0  # Adjust the version based on your requirement
+    - torchvision
+    - cvzone
+    - notebook
+    
+
